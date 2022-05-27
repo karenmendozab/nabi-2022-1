@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	position:relative;
+	font-family: 'Lexend Deca', sans-serif;
+	font-family: 'Nanum Pen Script', cursive;
+	background-color:#F0EFEB;
+	height: 100%;
+	max-width: 100%;
+}
+
+.footer{
+	color: #4E3A2F;
+	background-color: #FFE5D9;
+	padding: 40px;
+	display: flex;	
+	justify-content: space-between;
+}
+
+footer ul, h3{
+	list-style: none;	
+	flex-direction: column;
+}
+
+footer li{
+	font-family: 'Lexend Deca', sans-serif;
+	font-weight:400;
+	font-size: 12px;
+}
+
+h2{
+	font-family: 'Lexend Deca', sans-serif;
+	font-weight:500;
+	font-size: 14px;
+}
