@@ -1,0 +1,137 @@
+@charset "utf-8";
+/* CSS Document */
+
+#cabecera{
+    width: 100%;
+    height: 400px;
+    background-image: url("img/howl040.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-color: burlywood;
+    background-attachment: fixed;
+}
+
+.gallery {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.botonera{
+    width: 100%;
+    height: 50px;
+    padding-top: 30px;
+    background-color: white;
+    
+    }
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    display: inline;
+}
+.botonera li{
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 1px solid black;
+    
+}
+.botonera li:hover {
+    background-color: salmon;
+    color: white;
+}
+
+main a {
+    width: 23%;
+    margin-top: 2%;
+}
+main a img {
+    width: 100%;
+}
+h2{
+    text-align: center;
+    
+}
+.carrusel{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    scroll-behavior: smooth;
+    
+}
+.carrusel ul {
+    list-style: none;
+    margin:0px;
+    padding: 0px;
+    max-width: 510px;
+    scroll-behavior: auto;
+}
+.carrusel-fotos img{
+    background: black;
+    border: 1px solid black; 
+    width: 350px;
+    height: 100px;
+    object-fit: contain;
+}
+.carrusel-fotos{
+    display: flex;
+    gap:10px;
+    overflow: auto;
+    
+}
+.carrusel-menu{
+    display: none;
+}
+/*animacion*/
+.video-audio{
+    width: 100%;
+    height: 50px;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    animation-name: video;
+    animation-duration: 3s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-play-state: running;
+    animation-fill-mode: none;
+
+}
+@keyframes video{
+    0%{
+       background-color: red; 
+    }
+    
+    100%{
+    background-color: hotpink;
+        }
+    
+}
+@media screen and (min-width:500px) {
+    .carrusel-fotos{
+        overflow: hidden;
+    }
+    .carrusel-fotos img{
+        width: 500px;
+        height: 270px;
+    }
+    .carrusel-menu{
+        display: block;
+    }
+    .carrusel-menu img{
+        width: 50px;
+        height: 40px;
+    }
+}
+@media screen and (max-width: 600px) {
+    main a {
+    width: 48%;
+    flex-direction: column;
+    align-content: center;
+}
+}
